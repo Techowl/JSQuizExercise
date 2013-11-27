@@ -1,5 +1,25 @@
-<div class="question-display"></div>
+<div class="container">
+  <div class="question-display"></div>
+  <form id="submission">
+    <select class="choice-display">
+    </select>
+    <input type="submit" value="Answer">
+    <span class="last-wrong hidden">Wrong!</span><span class="last-right hidden">Right!</span>
+  </form>
 
-<div class="templates hidden">
-  <p class="question"></p>
+  <p class="num-correct hidden">Correct Answers: 0</p>
+  <p class="num-incorrect hidden">Incorrect Answers: 0</p>
+
+  <div class='templates hidden'>
+    <p class='question'></p>
+    <option class='choice' value='#'></option>
+  </div>
+
+  <script id="question" type="text/template">
+  <p class='question'></p>
+  </script>
+
+  <script id="choice" type="text/template">
+    <option class='choice' value='#'></option>
+  </script>
 </div>

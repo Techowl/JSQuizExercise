@@ -2,6 +2,38 @@
   display: none;
 }
 
-.templates {
+.num-correct {
+  color: #56FF00;
+}
 
+.num-incorrect {
+  color: red;
+}
+
+.last-right {
+  color: #56FF00;
+}
+
+.last-wrong {
+  color: red;
+}
+
+.container {
+  width: 250px;
+  margin: 100px auto 0px auto;
+}
+
+.question-display {
+  margin-bottom: 10px;
+}
+
+form input[type=submit] {
+  border: 0;
+  border-radius: 18px;
+  color: white;
+  background-color: blue;
+}
+
+form input[type=submit]:hover {
+  background-color: orange;
 }
