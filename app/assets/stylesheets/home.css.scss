@@ -1,3 +1,9 @@
+body {
+  background-image:url(http://qph.cf.quoracdn.net/main-qimg-fcb98c13e50b5880858ad06928c24ebe);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
 .hidden {
   display: none;
 }
@@ -20,10 +26,21 @@
 
 .container {
   width: 250px;
-  margin: 100px auto 0px auto;
+  margin: 200px auto 0px auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.choice-display {
+  background-color: black;
+  color: white;
+  border: 0;
 }
 
 .question-display {
+  color: white;
   margin-bottom: 10px;
 }
 
@@ -31,7 +48,7 @@ form input[type=submit] {
   border: 0;
   border-radius: 18px;
   color: white;
-  background-color: blue;
+  background-color: black;
 }
 
 form input[type=submit]:hover {
