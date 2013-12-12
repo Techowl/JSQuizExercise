@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(function() {
   Sessions.init()
 })
 
