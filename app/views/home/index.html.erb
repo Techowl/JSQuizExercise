@@ -3,26 +3,28 @@
   <form id="submission">
     <select class="choice-display">
     </select>
-    <input type="submit" value="Answer">
-    <span class="last-wrong hidden">Wrong!</span><span class="last-right hidden">Right!</span>
+    <input type="submit" value="Answer" class="button">
+    <span class="last-wrong correctness-indicator hidden">Wrong!</span><span class="last-right correctness-indicator hidden">Right!</span>
   </form>
 
   <p class="num-correct hidden">Correct Answers: 0</p>
   <p class="num-incorrect hidden">Incorrect Answers: 0</p>
 
+  <div id="play-again-button" class="button hidden">Play Again!</div>
+
   <div class='templates hidden'>
     <p class='question'></p>
     <option class='choice' value='#'></option>
   </div>
-
-  <script id="question" type="text/template">
-  <p class='question'></p>
-  </script>
-
-  <script id="choice" type="text/template">
-    <option class='choice' value='#'></option>
-  </script>
 </div>
+
+<!--   <script id="question" type="text/template">
+<p class='question'></p>
+</script>
+
+<script id="choice" type="text/template">
+  <option class='choice' value='#'></option>
+</script>
 
 <script id="header" type="text/template">
 <h1></h1>
@@ -31,6 +33,4 @@
 <script id="quiz" type="text/template">
 <div class="quiz" id="">
 </div>
-</script>
-
-<h2 class="question"></h2>
+</script> -->

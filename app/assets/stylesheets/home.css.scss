@@ -45,14 +45,19 @@ body {
   margin-bottom: 10px;
 }
 
-form input[type=submit] {
+.button {
   border: 0;
   border-radius: 18px;
   color: white;
   background-color: black;
 }
 
-form input[type=submit]:hover {
+.button:hover {
   color: black;
   background-color: white;
+}
+
+#play-again-button {
+  margin: 0 auto;
+  width: 55%;
 }
