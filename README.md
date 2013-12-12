@@ -1,3 +1,5 @@
+This repo contains my recent refactoring of a DBC exercise. That exercise is outlined below; my own refactoring was primarily in my (and my one team member's) earlier implementation of quiz.js.
+
 # quizzes
 
 ## This app exposes an API for a simple quiz appication.
