@@ -29,10 +29,10 @@ var Sessions = {
   },
 
   produceQuizOptionFromTemplate: function(quiz) {
-    var $optionTemplate = $(".templates .choice").clone()
-    $optionTemplate.attr("value",quiz.quiz_id)
-    $optionTemplate.text(quiz.name)
-    $(".choice-display").append($optionTemplate)
+    var source = $('#choice-template').html()
+    var template = Handlebars.compile(source)
+    var context = {value: quiz.quiz_id, choice: quiz.name}
+    $(".choice-display").append(template(context))
   },
 
   displaySelectedQuiz: function(e) {
@@ -68,10 +68,10 @@ var QuizQuestions = {
   },
 
   produceAnswerFromTemplate: function(choice) {
-    var $optionTemplate = $(".templates .choice").clone()
-    $optionTemplate.attr("value",choice.choice_id)
-    $optionTemplate.text(choice.choice)
-    $(".choice-display").append($optionTemplate)
+    var source = $('#choice-template').html()
+    var template = Handlebars.compile(source)
+    var context = {value: choice.choice_id, choice: choice.choice}
+    $(".choice-display").append(template(context))
   },
 
   displayCorrectAndIncorrectAnswerFields: function() {

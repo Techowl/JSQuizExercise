@@ -12,13 +12,18 @@
 
   <div id="play-again-button" class="button hidden">Play Again!</div>
 
-  <div class='templates hidden'>
-    <p class='question'></p>
-    <option class='choice' value='#'></option>
-  </div>
+  <script id="choice-template" type="text/x-handlebars-template">
+    <option class='choice' value='{{ value }}'>{{ choice }}</option>
+  </script>
 </div>
 
-<!--   <script id="question" type="text/template">
+<!--
+<div class='templates hidden'>
+  <p class='question'></p>
+  <option class='choice' value='#'></option>
+</div>
+
+<script id="question" type="text/template">
 <p class='question'></p>
 </script>
 
@@ -33,4 +38,5 @@
 <script id="quiz" type="text/template">
 <div class="quiz" id="">
 </div>
-</script> -->
+</script>
+-->
